@@ -9,7 +9,7 @@ struct TagView: View {
     
     var body: some View {
         Button(action: {
-            action()
+            self.action()
         }) {
             Text(title)
                 .font(Font(self.settings.font))
