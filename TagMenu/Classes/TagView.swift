@@ -9,18 +9,18 @@ struct TagView: View {
     
     var body: some View {
         Button(action: {
-            action()
+            self.action()
         }) {
             Text(title)
-                .font(Font(settings.font))
+                .font(Font(self.settings.font))
         }
-        .foregroundColor(Color(settings.regularColor))
+        .foregroundColor(Color(self.settings.regularColor))
         .padding(.vertical, 10)
         .padding(.horizontal, 22)
-        .overlay(RoundedRectangle(cornerRadius: settings.cornerRadius)
-                    .stroke(selected ? Color(settings.highlightColor) : Color(settings.regularColor),
-                            lineWidth: settings.borderSize))
-        .background(Color(settings.backgroundColor))
+        .overlay(RoundedRectangle(cornerRadius: self.settings.cornerRadius)
+                    .stroke(selected ? Color(self.settings.highlightColor) : Color(self.settings.regularColor),
+                            lineWidth: self.settings.borderSize))
+        .background(Color(self.settings.backgroundColor))
         
     }
 }
