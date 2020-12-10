@@ -25,18 +25,18 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lucianobohrer' => 'bohrerluciano@gmail.com' }
+  s.author           = { 'gabrielsilveiraa' => 'gabi.msilveira@gmail.com' }
   s.source           = { :git => 'https://github.com/lucianobohrer/TagMenu.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'TagMenu/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'TagMenu' => ['TagMenu/Assets/*.png']
-  # }
+  s.resources = 'TagMenu/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json,ttf, png}'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resource_bundles = {
+    'TagMenu' => ['TagMenu/Assets/**/*']
+  }
+   
+  s.frameworks = 'UIKit', 'SwiftUI'
 end

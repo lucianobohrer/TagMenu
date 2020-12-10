@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "lucianobohrer": "bohrerluciano@gmail.com"
+    "gabrielsilveiraa": "gabi.msilveira@gmail.com"
   },
   "source": {
     "git": "https://github.com/lucianobohrer/TagMenu.git",
@@ -18,5 +18,15 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "TagMenu/Classes/**/*"
+  "source_files": "TagMenu/Classes/**/*",
+  "resources": "TagMenu/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json,ttf, png}",
+  "resource_bundles": {
+    "TagMenu": [
+      "TagMenu/Assets/**/*"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "SwiftUI"
+  ]
 }

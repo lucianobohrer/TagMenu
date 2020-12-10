@@ -6,81 +6,118 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		AA1560B60B8AC6F80FF7BA10422B8FFE /* TagMenu */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 57EC53179FDE8ED09694C855EEF9C2B6 /* Build configuration list for PBXAggregateTarget "TagMenu" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = TagMenu;
-			productName = TagMenu;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		1C25B3DEC8CBB2B6D3F7EC42F7B61248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1FB6D0A11623BADC56973B495A4479AF /* Pods-TagMenu_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E916DE2E553F6D1F1FB2B47AADC14D8 /* Pods-TagMenu_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C13CBCE47CFA8E1A673EE8FC89E1E43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A232CCFEB6EDD2DC3F496BD7C8233428 /* Pods-TagMenu_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A11D96B5A3A2FF61D7184B793740B /* Pods-TagMenu_Example-dummy.m */; };
-		AA33FBD1EFA70AAAF07D871177FA1155 /* Pods-TagMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 599BD1A7C7AE0E04774F1FC63D32FBAB /* Pods-TagMenu_Tests-dummy.m */; };
-		C596B0B50C7EFED6579C5587C36CBCE2 /* Pods-TagMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57493CD8300E57B35D7243CF6A7F9166 /* Pods-TagMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0199360CCBBEE06561B764E87AB59949 /* HorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526648841257E4A4DFBE55FA5CA2ED9 /* HorizontalListView.swift */; };
+		10017DC23D1BF0DA162BCABD01BBA267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */; };
+		11AA0E236CDF1A6E0DFC44974CD13BDF /* TagMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B96604183F388B8543E6DF21EF4D73 /* TagMenu-dummy.m */; };
+		1C25B3DEC8CBB2B6D3F7EC42F7B61248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */; };
+		1E2F43358672AFFD635B03F63E15472A /* HorizontalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D453F96C48E513D66AED3C17B80530 /* HorizontalListViewModel.swift */; };
+		1FB6D0A11623BADC56973B495A4479AF /* Pods-TagMenu_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56473AD619D790F5FFAE69032615C82F /* Pods-TagMenu_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27144F311F12BA1F7C5A90CB4852F4CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9D6B54EB35BA403010B12AB1B9AEED /* UIKit.framework */; };
+		3A4A9773CA26C406EB3257FF03F22CF5 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD4D6D75C5BD98D3362AE61DDB80D7 /* ListItem.swift */; };
+		4C13CBCE47CFA8E1A673EE8FC89E1E43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */; };
+		581B11FE18E53391832DF10F95BCD83E /* TagMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B41FE9D7C32CBF88B188C6EB52BC876 /* TagMenu.bundle */; };
+		939CA35DB6666C7EFDD23F3916064747 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0E36001E64A26C7642A7F2A40EC757 /* SwiftUI.framework */; };
+		A232CCFEB6EDD2DC3F496BD7C8233428 /* Pods-TagMenu_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1F7CDAD18400F7CADFFD2B9F8D185 /* Pods-TagMenu_Example-dummy.m */; };
+		AA33FBD1EFA70AAAF07D871177FA1155 /* Pods-TagMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B0F8FFC4FB0C06C6767D5A99A2FA5B /* Pods-TagMenu_Tests-dummy.m */; };
+		C596B0B50C7EFED6579C5587C36CBCE2 /* Pods-TagMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D8FF70A1A7982C4B6F6666DC11B37A /* Pods-TagMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC2F68271626C3FEB0863EC6C564392D /* TagMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7923D4AF69349A687B87017BEE849B30 /* TagMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF439B3AE07D1C1D7E16925649E92EE4 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FABF6F188A8B69132EB843F03B534F3 /* TagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09E561F7C3A3A63DADB3D0BB7D0382D5 /* PBXContainerItemProxy */ = {
+		7D3AC0EF781EFFE4239F7C896F9EC88D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AA1560B60B8AC6F80FF7BA10422B8FFE;
 			remoteInfo = TagMenu;
 		};
-		A7D0A83E1BD4D40C2C0292A506F7D535 /* PBXContainerItemProxy */ = {
+		8D1FF381AAFE0CE7627B90C9E8C3DD9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA1560B60B8AC6F80FF7BA10422B8FFE;
+			remoteInfo = TagMenu;
+		};
+		D3BD0F40687413EF35F454C10D01F180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79F42F0DD650D27AFCB9FCCC1E9EBEC8;
+			remoteInfo = "TagMenu-TagMenu";
+		};
+		FC59FD62BDD2C1EAA142CDE5398953D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6A6BC37E3539F9EF2AE1FADAE75E5AFD;
 			remoteInfo = "Pods-TagMenu_Example";
 		};
-		FC126C2BC6FF71DEF230544E5DE03B76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA1560B60B8AC6F80FF7BA10422B8FFE;
-			remoteInfo = TagMenu;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E198224FDE675DE64269A98AFA531A1 /* Pods-TagMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		247BC94AF5A4BCD7C6E135444B61B7E9 /* Pods-TagMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TagMenu_Tests.modulemap"; sourceTree = "<group>"; };
-		28D17932ECEAEDF3377AA67FBD6A139D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		35DA1B2A0DC6C1720A5C6A502A47A822 /* Pods-TagMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3E916DE2E553F6D1F1FB2B47AADC14D8 /* Pods-TagMenu_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TagMenu_Example-umbrella.h"; sourceTree = "<group>"; };
-		4F84EF857FC98C8C8F1FEF3DB73BE4EE /* Pods_TagMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TagMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		500815003324C558C6F02D1BC38A67FD /* Pods-TagMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		57493CD8300E57B35D7243CF6A7F9166 /* Pods-TagMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TagMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
-		599BD1A7C7AE0E04774F1FC63D32FBAB /* Pods-TagMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TagMenu_Tests-dummy.m"; sourceTree = "<group>"; };
-		59E2470CF5D5CC6B6B444D159C380FD6 /* TagMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagMenu.debug.xcconfig; sourceTree = "<group>"; };
-		62274B749334700D4461730F1C56321E /* Pods-TagMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6D265EC8FC139E7D083D552E7D019778 /* Pods-TagMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6E0A11D96B5A3A2FF61D7184B793740B /* Pods-TagMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TagMenu_Example-dummy.m"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7A235F805C97016C0BE7CAAABCBA9293 /* Pods-TagMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TagMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7B6E4DAE958FFA496A4B9F1D1B0FE79D /* Pods-TagMenu_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Example-Info.plist"; sourceTree = "<group>"; };
-		8DBB437A2A5C35B494C18197FE758AB5 /* Pods-TagMenu_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TagMenu_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AE65C06636008B449C2A2F3A20C1156A /* Pods-TagMenu_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TagMenu_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CC220866C354E4D8BC0239CC588C622B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E2AC9779731BDE7B37C3217BFA88C6CB /* TagMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagMenu.release.xcconfig; sourceTree = "<group>"; };
-		F0D819D3BAE06A19126F484C9E9F8FF0 /* Pods-TagMenu_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Tests-Info.plist"; sourceTree = "<group>"; };
-		FCF6A7570BDE3D031E295CBA63A71F52 /* TagMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TagMenu.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		FE0E577F24449106A16647B50D11E57E /* Pods-TagMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FE917252D06CB8D37071BFFA36761B2D /* Pods_TagMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TagMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0136965336CA967D88147A53A1F946CB /* Pods-TagMenu_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Example-Info.plist"; sourceTree = "<group>"; };
+		07A1F7CDAD18400F7CADFFD2B9F8D185 /* Pods-TagMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TagMenu_Example-dummy.m"; sourceTree = "<group>"; };
+		0FB9C3ECC7B92060549AEFCE1145208C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0FCB3BD2F02DCC72E96553E2A2184F9E /* Pods-TagMenu_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TagMenu_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1120B721B4B9DE3BB5879989EE479BE9 /* Pods-TagMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1526648841257E4A4DFBE55FA5CA2ED9 /* HorizontalListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalListView.swift; path = TagMenu/Classes/HorizontalListView.swift; sourceTree = "<group>"; };
+		15615A854B2D4300E3EB7A0E6BE00D15 /* Pods-TagMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B41FE9D7C32CBF88B188C6EB52BC876 /* TagMenu.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TagMenu.bundle; path = "TagMenu-TagMenu.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		22C16848D298B810F292D1BAB63CDCE1 /* Pods-TagMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		23D453F96C48E513D66AED3C17B80530 /* HorizontalListViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalListViewModel.swift; path = TagMenu/Classes/HorizontalListViewModel.swift; sourceTree = "<group>"; };
+		24F7212F736424F97001B18D02F6C994 /* TagMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagMenu-prefix.pch"; sourceTree = "<group>"; };
+		28B96604183F388B8543E6DF21EF4D73 /* TagMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagMenu-dummy.m"; sourceTree = "<group>"; };
+		2DA961580F6960E2AC5A02DE60A1E365 /* TagMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagMenu.debug.xcconfig; sourceTree = "<group>"; };
+		3EDD27789C4516359D46FC780222D602 /* TagMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagMenu.release.xcconfig; sourceTree = "<group>"; };
+		40B4C76E4A53CFF7F681E6F9EA87695A /* TagMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagMenu.modulemap; sourceTree = "<group>"; };
+		42CD4D6D75C5BD98D3362AE61DDB80D7 /* ListItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListItem.swift; path = TagMenu/Classes/ListItem.swift; sourceTree = "<group>"; };
+		4F84EF857FC98C8C8F1FEF3DB73BE4EE /* Pods_TagMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TagMenu_Tests.framework; path = "Pods-TagMenu_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56473AD619D790F5FFAE69032615C82F /* Pods-TagMenu_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TagMenu_Example-umbrella.h"; sourceTree = "<group>"; };
+		5CF2E129B72759E34D8D5CD102D4C07C /* Pods-TagMenu_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TagMenu_Tests-Info.plist"; sourceTree = "<group>"; };
+		60CE2D0D74A7AB0AD39FE74D22AF2F6C /* Pods-TagMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		61FBA1126E95346472BB2F0B836C91B9 /* Pods-TagMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TagMenu_Tests.modulemap"; sourceTree = "<group>"; };
+		71D8FF70A1A7982C4B6F6666DC11B37A /* Pods-TagMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TagMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7923D4AF69349A687B87017BEE849B30 /* TagMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagMenu-umbrella.h"; sourceTree = "<group>"; };
+		7CF03492CB3ED315AF57317208FBA228 /* Pods-TagMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FABF6F188A8B69132EB843F03B534F3 /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagMenu/Classes/TagView.swift; sourceTree = "<group>"; };
+		82065805CB19725EABEFF4E6D2137A93 /* ResourceBundle-TagMenu-TagMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TagMenu-TagMenu-Info.plist"; sourceTree = "<group>"; };
+		97B8B522C5D9D6DCDC2C6D56FBF12848 /* Pods-TagMenu_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TagMenu_Example-frameworks.sh"; sourceTree = "<group>"; };
+		98B0F8FFC4FB0C06C6767D5A99A2FA5B /* Pods-TagMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TagMenu_Tests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5C6B6EAC4A889D52BB57E5C949ADB9E /* Pods-TagMenu_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TagMenu_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C8D6D8A55878788161344F61CF4407AD /* Pods-TagMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TagMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C94A1254A2AA8E144862D957AC7EB6C2 /* Pods-TagMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TagMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CC0E36001E64A26C7642A7F2A40EC757 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		D1A22304E702FD77D454660630CB565E /* TagMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagMenu.framework; path = TagMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D776FE3D8089E83C79E8E0DC1356605E /* Pods-TagMenu_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TagMenu_Example.modulemap"; sourceTree = "<group>"; };
+		DA9D6B54EB35BA403010B12AB1B9AEED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E17EF5E3C646296E80483A892A8BDAE1 /* TagMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TagMenu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E4C9FDBD3EBDA1FE7528A9172AB430E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FB74E595863EEF7E44183260871EE331 /* TagMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagMenu-Info.plist"; sourceTree = "<group>"; };
+		FE917252D06CB8D37071BFFA36761B2D /* Pods_TagMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TagMenu_Example.framework; path = "Pods-TagMenu_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5540AB61CED82F6FAF1A79E6549974C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B114BC6849AEF8BB9AC9B1A8AD7B45AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10017DC23D1BF0DA162BCABD01BBA267 /* Foundation.framework in Frameworks */,
+				939CA35DB6666C7EFDD23F3916064747 /* SwiftUI.framework in Frameworks */,
+				27144F311F12BA1F7C5A90CB4852F4CA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA7E89F3BCA648768E71DE30ECA532A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,119 +137,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0273C89BC59AF42191FA5D4E682DC125 /* Development Pods */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A6FC4E06C15E817B3A782A9A3300163 /* TagMenu */,
+				F5526776CFB064E883CCCEF07083471F /* iOS */,
 			);
-			name = "Development Pods";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A6FC4E06C15E817B3A782A9A3300163 /* TagMenu */ = {
+		1FAE725250150A6CDD0A56ADE9243452 /* TagMenu */ = {
 			isa = PBXGroup;
 			children = (
-				D44F85D2501F0078A4A9C5095B0AD508 /* Pod */,
-				B2F546FCBE50FE2D681C1DDF051E7664 /* Support Files */,
+				1526648841257E4A4DFBE55FA5CA2ED9 /* HorizontalListView.swift */,
+				23D453F96C48E513D66AED3C17B80530 /* HorizontalListViewModel.swift */,
+				42CD4D6D75C5BD98D3362AE61DDB80D7 /* ListItem.swift */,
+				7FABF6F188A8B69132EB843F03B534F3 /* TagView.swift */,
+				3844605DDDBD70A2AC049527984847D9 /* Pod */,
+				8D5CD885D21896F4C1F1A28952603B8E /* Support Files */,
 			);
 			name = TagMenu;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		515ECEE189E0D9FB10668D8824BC815A /* Products */ = {
+		3844605DDDBD70A2AC049527984847D9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9C3ECC7B92060549AEFCE1145208C /* LICENSE */,
+				E4C9FDBD3EBDA1FE7528A9172AB430E5 /* README.md */,
+				E17EF5E3C646296E80483A892A8BDAE1 /* TagMenu.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4C482329CD61B7055780A800C21CA4FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				FE917252D06CB8D37071BFFA36761B2D /* Pods_TagMenu_Example.framework */,
 				4F84EF857FC98C8C8F1FEF3DB73BE4EE /* Pods_TagMenu_Tests.framework */,
+				1B41FE9D7C32CBF88B188C6EB52BC876 /* TagMenu.bundle */,
+				D1A22304E702FD77D454660630CB565E /* TagMenu.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		8D5CD885D21896F4C1F1A28952603B8E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				82065805CB19725EABEFF4E6D2137A93 /* ResourceBundle-TagMenu-TagMenu-Info.plist */,
+				40B4C76E4A53CFF7F681E6F9EA87695A /* TagMenu.modulemap */,
+				28B96604183F388B8543E6DF21EF4D73 /* TagMenu-dummy.m */,
+				FB74E595863EEF7E44183260871EE331 /* TagMenu-Info.plist */,
+				24F7212F736424F97001B18D02F6C994 /* TagMenu-prefix.pch */,
+				7923D4AF69349A687B87017BEE849B30 /* TagMenu-umbrella.h */,
+				2DA961580F6960E2AC5A02DE60A1E365 /* TagMenu.debug.xcconfig */,
+				3EDD27789C4516359D46FC780222D602 /* TagMenu.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TagMenu";
 			sourceTree = "<group>";
 		};
-		847765CAA7B0AB4FEFFEEDD9AF46E25E /* Targets Support Files */ = {
+		8D874233E9FBBDF096500D788D06D81E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EB25C6C8E9F3D79B43822EF13A88C8E8 /* Pods-TagMenu_Example */,
-				FDFA77F67BE27B44E33E17E7CC177F91 /* Pods-TagMenu_Tests */,
+				D45DEACF153BF595A5CDC08BB17AA0EA /* Pods-TagMenu_Example */,
+				A3EAE27CF3F8F1C2202AE0542FAB60C7 /* Pods-TagMenu_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B2F546FCBE50FE2D681C1DDF051E7664 /* Support Files */ = {
+		A3EAE27CF3F8F1C2202AE0542FAB60C7 /* Pods-TagMenu_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				59E2470CF5D5CC6B6B444D159C380FD6 /* TagMenu.debug.xcconfig */,
-				E2AC9779731BDE7B37C3217BFA88C6CB /* TagMenu.release.xcconfig */,
+				61FBA1126E95346472BB2F0B836C91B9 /* Pods-TagMenu_Tests.modulemap */,
+				C8D6D8A55878788161344F61CF4407AD /* Pods-TagMenu_Tests-acknowledgements.markdown */,
+				1120B721B4B9DE3BB5879989EE479BE9 /* Pods-TagMenu_Tests-acknowledgements.plist */,
+				98B0F8FFC4FB0C06C6767D5A99A2FA5B /* Pods-TagMenu_Tests-dummy.m */,
+				A5C6B6EAC4A889D52BB57E5C949ADB9E /* Pods-TagMenu_Tests-frameworks.sh */,
+				5CF2E129B72759E34D8D5CD102D4C07C /* Pods-TagMenu_Tests-Info.plist */,
+				71D8FF70A1A7982C4B6F6666DC11B37A /* Pods-TagMenu_Tests-umbrella.h */,
+				7CF03492CB3ED315AF57317208FBA228 /* Pods-TagMenu_Tests.debug.xcconfig */,
+				22C16848D298B810F292D1BAB63CDCE1 /* Pods-TagMenu_Tests.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TagMenu";
+			name = "Pods-TagMenu_Tests";
+			path = "Target Support Files/Pods-TagMenu_Tests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				0273C89BC59AF42191FA5D4E682DC125 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				515ECEE189E0D9FB10668D8824BC815A /* Products */,
-				847765CAA7B0AB4FEFFEEDD9AF46E25E /* Targets Support Files */,
+				D4951DBB94331F8DDED552E0993BEC14 /* Development Pods */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				4C482329CD61B7055780A800C21CA4FA /* Products */,
+				8D874233E9FBBDF096500D788D06D81E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D45DEACF153BF595A5CDC08BB17AA0EA /* Pods-TagMenu_Example */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D44F85D2501F0078A4A9C5095B0AD508 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				28D17932ECEAEDF3377AA67FBD6A139D /* LICENSE */,
-				CC220866C354E4D8BC0239CC588C622B /* README.md */,
-				FCF6A7570BDE3D031E295CBA63A71F52 /* TagMenu.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		EB25C6C8E9F3D79B43822EF13A88C8E8 /* Pods-TagMenu_Example */ = {
-			isa = PBXGroup;
-			children = (
-				8DBB437A2A5C35B494C18197FE758AB5 /* Pods-TagMenu_Example.modulemap */,
-				AE65C06636008B449C2A2F3A20C1156A /* Pods-TagMenu_Example-acknowledgements.markdown */,
-				500815003324C558C6F02D1BC38A67FD /* Pods-TagMenu_Example-acknowledgements.plist */,
-				6E0A11D96B5A3A2FF61D7184B793740B /* Pods-TagMenu_Example-dummy.m */,
-				7B6E4DAE958FFA496A4B9F1D1B0FE79D /* Pods-TagMenu_Example-Info.plist */,
-				3E916DE2E553F6D1F1FB2B47AADC14D8 /* Pods-TagMenu_Example-umbrella.h */,
-				6D265EC8FC139E7D083D552E7D019778 /* Pods-TagMenu_Example.debug.xcconfig */,
-				35DA1B2A0DC6C1720A5C6A502A47A822 /* Pods-TagMenu_Example.release.xcconfig */,
+				D776FE3D8089E83C79E8E0DC1356605E /* Pods-TagMenu_Example.modulemap */,
+				0FCB3BD2F02DCC72E96553E2A2184F9E /* Pods-TagMenu_Example-acknowledgements.markdown */,
+				15615A854B2D4300E3EB7A0E6BE00D15 /* Pods-TagMenu_Example-acknowledgements.plist */,
+				07A1F7CDAD18400F7CADFFD2B9F8D185 /* Pods-TagMenu_Example-dummy.m */,
+				97B8B522C5D9D6DCDC2C6D56FBF12848 /* Pods-TagMenu_Example-frameworks.sh */,
+				0136965336CA967D88147A53A1F946CB /* Pods-TagMenu_Example-Info.plist */,
+				56473AD619D790F5FFAE69032615C82F /* Pods-TagMenu_Example-umbrella.h */,
+				60CE2D0D74A7AB0AD39FE74D22AF2F6C /* Pods-TagMenu_Example.debug.xcconfig */,
+				C94A1254A2AA8E144862D957AC7EB6C2 /* Pods-TagMenu_Example.release.xcconfig */,
 			);
 			name = "Pods-TagMenu_Example";
 			path = "Target Support Files/Pods-TagMenu_Example";
 			sourceTree = "<group>";
 		};
-		FDFA77F67BE27B44E33E17E7CC177F91 /* Pods-TagMenu_Tests */ = {
+		D4951DBB94331F8DDED552E0993BEC14 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				247BC94AF5A4BCD7C6E135444B61B7E9 /* Pods-TagMenu_Tests.modulemap */,
-				7A235F805C97016C0BE7CAAABCBA9293 /* Pods-TagMenu_Tests-acknowledgements.markdown */,
-				1E198224FDE675DE64269A98AFA531A1 /* Pods-TagMenu_Tests-acknowledgements.plist */,
-				599BD1A7C7AE0E04774F1FC63D32FBAB /* Pods-TagMenu_Tests-dummy.m */,
-				F0D819D3BAE06A19126F484C9E9F8FF0 /* Pods-TagMenu_Tests-Info.plist */,
-				57493CD8300E57B35D7243CF6A7F9166 /* Pods-TagMenu_Tests-umbrella.h */,
-				62274B749334700D4461730F1C56321E /* Pods-TagMenu_Tests.debug.xcconfig */,
-				FE0E577F24449106A16647B50D11E57E /* Pods-TagMenu_Tests.release.xcconfig */,
+				1FAE725250150A6CDD0A56ADE9243452 /* TagMenu */,
 			);
-			name = "Pods-TagMenu_Tests";
-			path = "Target Support Files/Pods-TagMenu_Tests";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F5526776CFB064E883CCCEF07083471F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */,
+				CC0E36001E64A26C7642A7F2A40EC757 /* SwiftUI.framework */,
+				DA9D6B54EB35BA403010B12AB1B9AEED /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +276,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C596B0B50C7EFED6579C5587C36CBCE2 /* Pods-TagMenu_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371714EE7417107E1FDD72B7BB92A3DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2F68271626C3FEB0863EC6C564392D /* TagMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,11 +310,47 @@
 			buildRules = (
 			);
 			dependencies = (
-				85C20543E81F5B7A3C2790B7643AF250 /* PBXTargetDependency */,
+				A3BD940C98D4017DC905E3000D5B8F00 /* PBXTargetDependency */,
 			);
 			name = "Pods-TagMenu_Example";
 			productName = "Pods-TagMenu_Example";
 			productReference = FE917252D06CB8D37071BFFA36761B2D /* Pods_TagMenu_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79F42F0DD650D27AFCB9FCCC1E9EBEC8 /* TagMenu-TagMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B58002AC71CC1B03CB5F0A47AA25A64A /* Build configuration list for PBXNativeTarget "TagMenu-TagMenu" */;
+			buildPhases = (
+				8970618B5CD51DB1D96B6AD7FF05FCE0 /* Sources */,
+				5540AB61CED82F6FAF1A79E6549974C9 /* Frameworks */,
+				33C3C9BC6ECC1FD430189718CE3C8689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TagMenu-TagMenu";
+			productName = "TagMenu-TagMenu";
+			productReference = 1B41FE9D7C32CBF88B188C6EB52BC876 /* TagMenu.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AA1560B60B8AC6F80FF7BA10422B8FFE /* TagMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046F4EC615C6F65A5A259E525CC11C66 /* Build configuration list for PBXNativeTarget "TagMenu" */;
+			buildPhases = (
+				371714EE7417107E1FDD72B7BB92A3DC /* Headers */,
+				2761784E4B7ED739D9CA1DDFA0326877 /* Sources */,
+				B114BC6849AEF8BB9AC9B1A8AD7B45AC /* Frameworks */,
+				C061A02D0B32C89D821160E83D793C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B71EC323E69F70D84C89D79DE67DD9D5 /* PBXTargetDependency */,
+			);
+			name = TagMenu;
+			productName = TagMenu;
+			productReference = D1A22304E702FD77D454660630CB565E /* TagMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D0F1428C83DDA50F91E59DE7EA4BE2F4 /* Pods-TagMenu_Tests */ = {
@@ -268,8 +365,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D9BA678F39101B50E1C3C2DCDE5964D0 /* PBXTargetDependency */,
-				EE9E43CC3AF5D759AEF9AB8AAAA456F1 /* PBXTargetDependency */,
+				0379BCEF57A82A011AB1559B97C089B4 /* PBXTargetDependency */,
+				E2C82E10DB70D63F3EA9626765238DC1 /* PBXTargetDependency */,
 			);
 			name = "Pods-TagMenu_Tests";
 			productName = "Pods-TagMenu_Tests";
@@ -294,13 +391,14 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 515ECEE189E0D9FB10668D8824BC815A /* Products */;
+			productRefGroup = 4C482329CD61B7055780A800C21CA4FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6A6BC37E3539F9EF2AE1FADAE75E5AFD /* Pods-TagMenu_Example */,
 				D0F1428C83DDA50F91E59DE7EA4BE2F4 /* Pods-TagMenu_Tests */,
 				AA1560B60B8AC6F80FF7BA10422B8FFE /* TagMenu */,
+				79F42F0DD650D27AFCB9FCCC1E9EBEC8 /* TagMenu-TagMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -310,6 +408,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33C3C9BC6ECC1FD430189718CE3C8689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C061A02D0B32C89D821160E83D793C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581B11FE18E53391832DF10F95BCD83E /* TagMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,62 +452,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2761784E4B7ED739D9CA1DDFA0326877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0199360CCBBEE06561B764E87AB59949 /* HorizontalListView.swift in Sources */,
+				1E2F43358672AFFD635B03F63E15472A /* HorizontalListViewModel.swift in Sources */,
+				3A4A9773CA26C406EB3257FF03F22CF5 /* ListItem.swift in Sources */,
+				11AA0E236CDF1A6E0DFC44974CD13BDF /* TagMenu-dummy.m in Sources */,
+				EF439B3AE07D1C1D7E16925649E92EE4 /* TagView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8970618B5CD51DB1D96B6AD7FF05FCE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		85C20543E81F5B7A3C2790B7643AF250 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TagMenu;
-			target = AA1560B60B8AC6F80FF7BA10422B8FFE /* TagMenu */;
-			targetProxy = 09E561F7C3A3A63DADB3D0BB7D0382D5 /* PBXContainerItemProxy */;
-		};
-		D9BA678F39101B50E1C3C2DCDE5964D0 /* PBXTargetDependency */ = {
+		0379BCEF57A82A011AB1559B97C089B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TagMenu_Example";
 			target = 6A6BC37E3539F9EF2AE1FADAE75E5AFD /* Pods-TagMenu_Example */;
-			targetProxy = A7D0A83E1BD4D40C2C0292A506F7D535 /* PBXContainerItemProxy */;
+			targetProxy = FC59FD62BDD2C1EAA142CDE5398953D9 /* PBXContainerItemProxy */;
 		};
-		EE9E43CC3AF5D759AEF9AB8AAAA456F1 /* PBXTargetDependency */ = {
+		A3BD940C98D4017DC905E3000D5B8F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TagMenu;
 			target = AA1560B60B8AC6F80FF7BA10422B8FFE /* TagMenu */;
-			targetProxy = FC126C2BC6FF71DEF230544E5DE03B76 /* PBXContainerItemProxy */;
+			targetProxy = 8D1FF381AAFE0CE7627B90C9E8C3DD9F /* PBXContainerItemProxy */;
+		};
+		B71EC323E69F70D84C89D79DE67DD9D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TagMenu-TagMenu";
+			target = 79F42F0DD650D27AFCB9FCCC1E9EBEC8 /* TagMenu-TagMenu */;
+			targetProxy = D3BD0F40687413EF35F454C10D01F180 /* PBXContainerItemProxy */;
+		};
+		E2C82E10DB70D63F3EA9626765238DC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TagMenu;
+			target = AA1560B60B8AC6F80FF7BA10422B8FFE /* TagMenu */;
+			targetProxy = 7D3AC0EF781EFFE4239F7C896F9EC88D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BFC288D5C826E7F0C37AFB8223267DD /* Release */ = {
+		1C6B7BA24C434EEC0B86A99836E4C4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2AC9779731BDE7B37C3217BFA88C6CB /* TagMenu.release.xcconfig */;
+			baseConfigurationReference = 2DA961580F6960E2AC5A02DE60A1E365 /* TagMenu.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TagMenu";
+				IBSC_MODULE = TagMenu;
+				INFOPLIST_FILE = "Target Support Files/TagMenu/ResourceBundle-TagMenu-TagMenu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = TagMenu;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		291CDF1BA822D48C9AAEEC68FA9B55A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59E2470CF5D5CC6B6B444D159C380FD6 /* TagMenu.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
 		776F500E402B84527A75D484C78A87CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35DA1B2A0DC6C1720A5C6A502A47A822 /* Pods-TagMenu_Example.release.xcconfig */;
+			baseConfigurationReference = C94A1254A2AA8E144862D957AC7EB6C2 /* Pods-TagMenu_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -429,7 +554,7 @@
 		};
 		882916CBF10D5AAAC97B47459E5F3FB2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE0E577F24449106A16647B50D11E57E /* Pods-TagMenu_Tests.release.xcconfig */;
+			baseConfigurationReference = 22C16848D298B810F292D1BAB63CDCE1 /* Pods-TagMenu_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -455,6 +580,38 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B3DD1442AB8E2E98F6F68EE0763CC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EDD27789C4516359D46FC780222D602 /* TagMenu.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagMenu/TagMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagMenu/TagMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TagMenu/TagMenu.modulemap";
+				PRODUCT_MODULE_NAME = TagMenu;
+				PRODUCT_NAME = TagMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -516,7 +673,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -524,7 +682,7 @@
 		};
 		91B17B477085DEF8DDC7A340D3868549 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62274B749334700D4461730F1C56321E /* Pods-TagMenu_Tests.debug.xcconfig */;
+			baseConfigurationReference = 7CF03492CB3ED315AF57317208FBA228 /* Pods-TagMenu_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -556,9 +714,40 @@
 			};
 			name = Debug;
 		};
+		989E8BC0FA9CC09840B02F3474865CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA961580F6960E2AC5A02DE60A1E365 /* TagMenu.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagMenu/TagMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagMenu/TagMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TagMenu/TagMenu.modulemap";
+				PRODUCT_MODULE_NAME = TagMenu;
+				PRODUCT_NAME = TagMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A941A6C052BA6275C1EAB0EF6E3DE4D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D265EC8FC139E7D083D552E7D019778 /* Pods-TagMenu_Example.debug.xcconfig */;
+			baseConfigurationReference = 60CE2D0D74A7AB0AD39FE74D22AF2F6C /* Pods-TagMenu_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -589,6 +778,22 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		C407DF32FFCBADC78EB036CD01773752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EDD27789C4516359D46FC780222D602 /* TagMenu.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TagMenu";
+				IBSC_MODULE = TagMenu;
+				INFOPLIST_FILE = "Target Support Files/TagMenu/ResourceBundle-TagMenu-TagMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = TagMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		EEF25CDFE5981495667B2EF4925DC0C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -658,6 +863,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		046F4EC615C6F65A5A259E525CC11C66 /* Build configuration list for PBXNativeTarget "TagMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989E8BC0FA9CC09840B02F3474865CB2 /* Debug */,
+				8B3DD1442AB8E2E98F6F68EE0763CC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		20F184092BE7DC5CDB81670037C0C04A /* Build configuration list for PBXNativeTarget "Pods-TagMenu_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -676,11 +890,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57EC53179FDE8ED09694C855EEF9C2B6 /* Build configuration list for PBXAggregateTarget "TagMenu" */ = {
+		B58002AC71CC1B03CB5F0A47AA25A64A /* Build configuration list for PBXNativeTarget "TagMenu-TagMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				291CDF1BA822D48C9AAEEC68FA9B55A3 /* Debug */,
-				0BFC288D5C826E7F0C37AFB8223267DD /* Release */,
+				1C6B7BA24C434EEC0B86A99836E4C4BA /* Debug */,
+				C407DF32FFCBADC78EB036CD01773752 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
