@@ -20,9 +20,10 @@ it, simply add the following line to your Podfile:
 pod 'TagMenu'
 ```
 
-## Author
+## Authors
 
-lucianobohrer, bohrerluciano@gmail.com
+- [lucianobohrer](https://github.com/lucianobohrer)
+- [gabrielsilveiraa](https://github.com/gabrielsilveiraa)
 
 ## License
 
