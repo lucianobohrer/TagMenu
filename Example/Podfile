@@ -8,6 +8,5 @@ target 'TagMenu_Example' do
 target 'TagMenu_Tests' do
   pod 'TagMenu', :path => '../'
   inherit! :search_paths
-  
   end
 end
