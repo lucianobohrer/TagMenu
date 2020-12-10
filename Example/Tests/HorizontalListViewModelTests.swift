@@ -1,6 +1,7 @@
 
 import XCTest
 import Combine
+import TagMenu
 
 final class HorizontalListViewModelTests: XCTestCase {
     var viewModel: HorizontalListViewModel<TestItem>!
