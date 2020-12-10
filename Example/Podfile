@@ -1,13 +1,13 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '13.0'
 
 target 'TagMenu_Example' do
   pod 'TagMenu', :path => '../'
 
-  target 'TagMenu_Tests' do
-    inherit! :search_paths
-
-    
+target 'TagMenu_Tests' do
+  pod 'TagMenu', :path => '../'
+  inherit! :search_paths
+  
   end
 end
