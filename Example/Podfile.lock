@@ -1,0 +1,16 @@
+PODS:
+  - TagMenu (0.1.0)
+
+DEPENDENCIES:
+  - TagMenu (from `../`)
+
+EXTERNAL SOURCES:
+  TagMenu:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TagMenu: a9ae73f884760fb4fa321bf4e2016e294bbec7ce
+
+PODFILE CHECKSUM: 3f8c7e42869b93d198d5a49f88427e7f3eae97c0
+
+COCOAPODS: 1.9.3

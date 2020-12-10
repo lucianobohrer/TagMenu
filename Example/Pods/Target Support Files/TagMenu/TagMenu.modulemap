@@ -1,0 +1,6 @@
+framework module TagMenu {
+  umbrella header "TagMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

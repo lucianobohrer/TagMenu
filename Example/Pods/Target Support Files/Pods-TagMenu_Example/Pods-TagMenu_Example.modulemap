@@ -1,0 +1,6 @@
+framework module Pods_TagMenu_Example {
+  umbrella header "Pods-TagMenu_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
