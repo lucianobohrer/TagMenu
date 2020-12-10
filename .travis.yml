@@ -1,8 +1,8 @@
 language: swift
 os: osx
 osx_image: xcode11.6
-xcode_workspace: Example/SuperDDAIuPay.xcworkspace
-xcode_scheme: SuperDDAIuPay-Example
+xcode_workspace: Example/TagMenu.xcworkspace
+xcode_scheme: TagMenu-Example
 xcode_destination: platform=iOS Simulator,OS=13.6,name=iPhone 11
 
 notifications:
