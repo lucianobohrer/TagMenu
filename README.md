@@ -1,6 +1,6 @@
 # TagMenu
 
-[![CI Status](https://img.shields.io/travis/lucianobohrer/TagMenu.svg?style=flat)](https://travis-ci.org/lucianobohrer/TagMenu)
+[![Build Status](https://travis-ci.com/lucianobohrer/TagMenu.svg?token=qq5fjiKDEp43N6JsJhQv&branch=main)](https://travis-ci.com/lucianobohrer/TagMenu)
 [![Version](https://img.shields.io/cocoapods/v/TagMenu.svg?style=flat)](https://cocoapods.org/pods/TagMenu)
 [![License](https://img.shields.io/cocoapods/l/TagMenu.svg?style=flat)](https://cocoapods.org/pods/TagMenu)
 [![Platform](https://img.shields.io/cocoapods/p/TagMenu.svg?style=flat)](https://cocoapods.org/pods/TagMenu)
@@ -20,9 +20,10 @@ it, simply add the following line to your Podfile:
 pod 'TagMenu'
 ```
 
-## Author
+## Authors
 
-lucianobohrer, bohrerluciano@gmail.com
+- [lucianobohrer](https://github.com/lucianobohrer)
+- [gabrielsilveiraa](https://github.com/gabrielsilveiraa)
 
 ## License
 
