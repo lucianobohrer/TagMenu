@@ -14,7 +14,9 @@ public struct HorizontalListView<T: Displayable>: View {
                 Text(self.viewModel.title)
                     .frame(maxWidth: .infinity,
                            alignment: .leading)
+                    .font(Font(tagSettings.font))
                     .padding(.leading, 8)
+                    
             }
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -45,16 +47,15 @@ struct HorizontalListView_Previews: PreviewProvider {
             SelectableListItem(value: "Item 1", selected: true),
             SelectableListItem(value: "Item 2"),
             SelectableListItem(value: "Item 3"),
-            SelectableListItem(value: "Item 4")
+            SelectableListItem(value: "Item 4"),
+            SelectableListItem(value: "Item 5"),
+            SelectableListItem(value: "Item 6")
         ],
-        title: "Sort by",
-        selection: .multiple(max: 3))
+        title: "",
+        selection: .single)
         
         let view = HorizontalListView<String>(viewModel: vm,
-                                              tagSettings: TagMenuSettings(highlightColor: .systemRed,
-                                                                           regularColor: .gray,
-                                                                           backgroundColor: .white,
-                                                                           borderSize: 1))
+                                              tagSettings: TagMenuSettings())
         
         cancellable = vm.selectedItemsSubject.sink { (values) in
             print(values)

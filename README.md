@@ -9,7 +9,51 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Usage
+
+### Single Selection
+![](Docs/single.gif)
+
+```swift
+let viewModel = TagMenuViewModel<String>(items: [
+    SelectableListItem(value: "Item 1", selected: true),
+    SelectableListItem(value: "Item 2"),
+    SelectableListItem(value: "Item 3"),
+    SelectableListItem(value: "Item 4")
+],
+title: "",
+selection: .single)
+
+let view = TagMenuView<String>(viewModel: viewModel,
+                               tagSettings: TagMenuSettings(highlightColor: .black,
+                                                            regularColor: .gray,
+                                                            backgroundColor: .white,
+                                                            borderSize: 3))
+
+cancellable = viewModel.selectedItemsSubject.sink { (values) in
+    print(values)
+}
+```
+### Multiple Selection
+![](Docs/multiple.gif)
+
+```swift
+let viewModel = TagMenuViewModel<String>(items: [
+    SelectableListItem(value: "Item 1"),
+    SelectableListItem(value: "Item 2"),
+    SelectableListItem(value: "Item 3"),
+    SelectableListItem(value: "Item 4")
+],
+title: "Select until 3 items",
+selection: .multiple(max: 3))
+
+let view = TagMenuView<String>(viewModel: viewModel,
+                               tagSettings: TagMenuSettings())
+
+cancellable = viewModel.selectedItemsSubject.sink { (values) in
+    print(values)
+}
+```
 
 ## Package 
 
