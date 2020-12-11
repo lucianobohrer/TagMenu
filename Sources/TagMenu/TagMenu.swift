@@ -2,8 +2,8 @@
 import SwiftUI
 import Combine
 
-public struct HorizontalListView<T: Displayable>: View {
-    @ObservedObject public var viewModel: HorizontalListViewModel<T>
+public struct TagMenu<T: Displayable>: View {
+    @ObservedObject public var viewModel: TagMenuViewModel<T>
     
     public var rightToLeft: Bool = false
     public var tagSettings: TagMenuSettings = TagMenuSettings()
@@ -43,7 +43,7 @@ struct HorizontalListView_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        let vm = HorizontalListViewModel<String>(items: [
+        let vm = TagMenuViewModel<String>(items: [
             SelectableListItem(value: "Item 1", selected: true),
             SelectableListItem(value: "Item 2"),
             SelectableListItem(value: "Item 3"),
@@ -54,8 +54,11 @@ struct HorizontalListView_Previews: PreviewProvider {
         title: "",
         selection: .single)
         
-        let view = HorizontalListView<String>(viewModel: vm,
-                                              tagSettings: TagMenuSettings())
+        let view = TagMenu<String>(viewModel: vm,
+                                              tagSettings: TagMenuSettings(highlightColor: .systemRed,
+                                                                           regularColor: .gray,
+                                                                           backgroundColor: .white,
+                                                                           borderSize: 1))
         
         cancellable = vm.selectedItemsSubject.sink { (values) in
             print(values)
