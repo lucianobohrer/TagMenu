@@ -9,7 +9,62 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Usage
+
+### Single Selection
+<img src=Docs/single.gif width=200 align="right" />
+
+```swift
+let viewModel = TagMenuViewModel<String>(items: [
+    SelectableListItem(value: "Item 1", selected: true),
+    SelectableListItem(value: "Item 2"),
+    SelectableListItem(value: "Item 3"),
+    SelectableListItem(value: "Item 4")
+],
+title: "",
+selection: .single)
+
+let view = TagMenuView<String>(viewModel: viewModel)
+```
+### Multiple Selection
+<img src=Docs/multiple.gif width=200 align="right" />
+
+```swift
+let viewModel = TagMenuViewModel<String>(items: [
+    SelectableListItem(value: "Item 1"),
+    SelectableListItem(value: "Item 2"),
+    SelectableListItem(value: "Item 3"),
+    SelectableListItem(value: "Item 4")
+],
+title: "Select until 3 items",
+selection: .multiple(max: 3))
+
+let view = TagMenuView<String>(viewModel: viewModel)
+```
+
+### Handling Selection Event
+
+Subscribe the `selectedItemsSubject` to get the current selected values when a new item is selected/deselected.
+
+```swift
+var cancellable: Cancellable?
+
+cancellable = viewModel.selectedItemsSubject.sink { (values) in
+    print(values)
+}
+```
+
+### Customizing the view
+
+Set `TagMenuSettings` custom parameters
+
+```swift
+let view = TagMenuView<String>(viewModel: vm,
+                                      tagSettings: TagMenuSettings(highlightColor: .black,
+                                                                   regularColor: .gray,
+                                                                   backgroundColor: .white,
+                                                                   borderSize: 3))
+```
 
 ## Package 
 
