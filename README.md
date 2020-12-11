@@ -24,15 +24,7 @@ let viewModel = TagMenuViewModel<String>(items: [
 title: "",
 selection: .single)
 
-let view = TagMenuView<String>(viewModel: viewModel,
-                               tagSettings: TagMenuSettings(highlightColor: .black,
-                                                            regularColor: .gray,
-                                                            backgroundColor: .white,
-                                                            borderSize: 3))
-
-cancellable = viewModel.selectedItemsSubject.sink { (values) in
-    print(values)
-}
+let view = TagMenuView<String>(viewModel: viewModel)
 ```
 ### Multiple Selection
 <img src=Docs/multiple.gif width=200 align="right" />
@@ -47,12 +39,31 @@ let viewModel = TagMenuViewModel<String>(items: [
 title: "Select until 3 items",
 selection: .multiple(max: 3))
 
-let view = TagMenuView<String>(viewModel: viewModel,
-                               tagSettings: TagMenuSettings())
+let view = TagMenuView<String>(viewModel: viewModel)
+```
+
+### Handling Selection Event
+
+Subscribe the `selectedItemsSubject` to get the current selected values when a new item is selected/deselected.
+
+```swift
+var cancellable: Cancellable?
 
 cancellable = viewModel.selectedItemsSubject.sink { (values) in
     print(values)
 }
+```
+
+### Customizing the view
+
+Set `TagMenuSettings` custom parameters
+
+```swift
+let view = HorizontalListView<String>(viewModel: vm,
+                                      tagSettings: TagMenuSettings(highlightColor: .black,
+                                                                   regularColor: .gray,
+                                                                   backgroundColor: .white,
+                                                                   borderSize: 3))
 ```
 
 ## Package 
