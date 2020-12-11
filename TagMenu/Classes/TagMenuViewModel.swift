@@ -2,7 +2,7 @@
 import Foundation
 import Combine
 
-public final class HorizontalListViewModel<T: Displayable>: ObservableObject {
+public final class TagMenuViewModel<T: Displayable>: ObservableObject {
     
     public enum SelectionType {
         case single

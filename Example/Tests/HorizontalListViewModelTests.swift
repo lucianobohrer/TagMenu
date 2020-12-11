@@ -4,18 +4,18 @@ import Combine
 import TagMenu
 
 final class HorizontalListViewModelTests: XCTestCase {
-    var viewModel: HorizontalListViewModel<TestItem>!
+    var viewModel: TagMenuViewModel<TestItem>!
     var cancellables = Set<AnyCancellable>()
     
     func testViewModelDisplayTitle() {
-        viewModel = HorizontalListViewModel<TestItem>(items: [],
+        viewModel = TagMenuViewModel<TestItem>(items: [],
                                                     title: "title")
         XCTAssertEqual(viewModel.title, "title")
         XCTAssertTrue(viewModel.displayTitle)
     }
     
     func testViewModelNotDisplayTitle() {
-        viewModel = HorizontalListViewModel<TestItem>(items: [])
+        viewModel = TagMenuViewModel<TestItem>(items: [])
         XCTAssertFalse(viewModel.displayTitle)
     }
     
@@ -24,7 +24,7 @@ final class HorizontalListViewModelTests: XCTestCase {
         let item2 = SelectableListItem(value: TestItem(name: "item 2", price: 20))
         let item3 = SelectableListItem(value: TestItem(name: "item 3", price: 30))
         
-        viewModel = HorizontalListViewModel<TestItem>(items: [item1,
+        viewModel = TagMenuViewModel<TestItem>(items: [item1,
                                                               item2,
                                                               item3])
         
@@ -46,7 +46,7 @@ final class HorizontalListViewModelTests: XCTestCase {
         let item2 = SelectableListItem(value: TestItem(name: "item 2", price: 20))
         let item3 = SelectableListItem(value: TestItem(name: "item 3", price: 30))
         
-        viewModel = HorizontalListViewModel<TestItem>(items: [item1,
+        viewModel = TagMenuViewModel<TestItem>(items: [item1,
                                                             item2,
                                                             item3],
                                                       selection: .multiple(max: 3))
@@ -70,7 +70,7 @@ final class HorizontalListViewModelTests: XCTestCase {
         let item2 = SelectableListItem(value: TestItem(name: "item 2", price: 20))
         let item3 = SelectableListItem(value: TestItem(name: "item 3", price: 30))
         
-        viewModel = HorizontalListViewModel<TestItem>(items: [item1,
+        viewModel = TagMenuViewModel<TestItem>(items: [item1,
                                                               item2,
                                                               item3],
                                                     selection: .multiple(max: 3))
@@ -100,7 +100,7 @@ final class HorizontalListViewModelTests: XCTestCase {
         let item2 = SelectableListItem(value: TestItem(name: "item 2", price: 20))
         let item3 = SelectableListItem(value: TestItem(name: "item 3", price: 30))
         
-        viewModel = HorizontalListViewModel<TestItem>(items: [item1,
+        viewModel = TagMenuViewModel<TestItem>(items: [item1,
                                                             item2,
                                                             item3],
                                                       selection: .multiple(max: 2))
