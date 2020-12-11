@@ -11,7 +11,21 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-## Installation
+## Package 
+
+### For Xcode Projects
+
+File > Swift Packages > Add Package Dependency: https://github.com/lucianobohrer/TagMenu
+
+### For Swift Packages
+
+Add a dependency in your your `Package.swift`
+
+```swift
+.package(url: "https://github.com/lucianobohrer/TagMenu.git", from: "0.1.0"),
+```
+
+## CocoaPods 
 
 TagMenu is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
