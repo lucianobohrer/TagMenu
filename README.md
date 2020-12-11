@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Usage
 
 ### Single Selection
-![](Docs/single.gif)
+<img src=Docs/single.gif width=200 align="right" />
 
 ```swift
 let viewModel = TagMenuViewModel<String>(items: [
@@ -35,7 +35,7 @@ cancellable = viewModel.selectedItemsSubject.sink { (values) in
 }
 ```
 ### Multiple Selection
-![](Docs/multiple.gif)
+<img src=Docs/multiple.gif width=200 align="right" />
 
 ```swift
 let viewModel = TagMenuViewModel<String>(items: [
