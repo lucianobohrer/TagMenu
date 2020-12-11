@@ -10,8 +10,8 @@ public struct TagMenu<T: Displayable>: View {
     
     public var body: some View {
         VStack {
-            if viewModel.displayTitle {
-                Text(viewModel.title)
+            if self.viewModel.displayTitle {
+                Text(self.viewModel.title)
                     .frame(maxWidth: .infinity,
                            alignment: .leading)
                     .padding(.leading, 8)
@@ -19,13 +19,13 @@ public struct TagMenu<T: Displayable>: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
-                    ForEach(viewModel.items, id: \.id) { (item) in
+                    ForEach(self.viewModel.items, id: \.id) { (item) in
                         TagView(action: {
                             self.viewModel.handleSelection(item: item)
                         },
                         title: item.value.displayed,
                         selected: item.selected,
-                        settings: tagSettings)
+                        settings: self.tagSettings)
                     }
                 }
                 .padding(8)
