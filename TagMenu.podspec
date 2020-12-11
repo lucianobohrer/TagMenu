@@ -31,8 +31,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'TagMenu/Classes/**/*'
-  s.resources = 'TagMenu/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json,ttf, png}'
+  s.source_files = 'Sources/**/*.swift'
+  s.resources = 'Assets/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json,ttf, png}'
 
   s.resource_bundles = {
     'TagMenu' => ['TagMenu/Assets/**/*']

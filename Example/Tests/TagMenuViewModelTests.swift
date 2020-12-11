@@ -3,7 +3,7 @@ import XCTest
 import Combine
 import TagMenu
 
-final class HorizontalListViewModelTests: XCTestCase {
+final class TagMenuViewModelTests: XCTestCase {
     var viewModel: TagMenuViewModel<TestItem>!
     var cancellables = Set<AnyCancellable>()
     

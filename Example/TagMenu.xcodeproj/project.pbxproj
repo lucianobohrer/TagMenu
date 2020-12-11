@@ -12,7 +12,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		AD9514F5258277D800ACE0A7 /* HorizontalListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF23ACA25826ECD00F174F4 /* HorizontalListViewModelTests.swift */; };
+		AD9514F5258277D800ACE0A7 /* TagMenuViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF23ACA25826ECD00F174F4 /* TagMenuViewModelTests.swift */; };
 		B1E5E24F0D8FC48283F2D920 /* Pods_TagMenu_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF1717FE7B0462551A9BAF5 /* Pods_TagMenu_Example.framework */; };
 		F7F328BEEA966884167366D3 /* Pods_TagMenu_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A9E00854B1F392879DB495 /* Pods_TagMenu_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,7 @@
 		836BC511E9EAECA499B4D065 /* TagMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TagMenu.podspec; path = ../TagMenu.podspec; sourceTree = "<group>"; };
 		B0B89B95FFC471AEE6091AE1 /* Pods-TagMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagMenu_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TagMenu_Tests/Pods-TagMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6A9E00854B1F392879DB495 /* Pods_TagMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TagMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDF23ACA25826ECD00F174F4 /* HorizontalListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalListViewModelTests.swift; sourceTree = "<group>"; };
+		CDF23ACA25826ECD00F174F4 /* TagMenuViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagMenuViewModelTests.swift; sourceTree = "<group>"; };
 		E10121B97EAB972117D22127 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F9D49AC905CD3D2094F0E3F4 /* Pods-TagMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagMenu_Tests.release.xcconfig"; path = "Target Support Files/Pods-TagMenu_Tests/Pods-TagMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +115,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CDF23ACA25826ECD00F174F4 /* HorizontalListViewModelTests.swift */,
+				CDF23ACA25826ECD00F174F4 /* TagMenuViewModelTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -170,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				B5F52CC37C80ECF10E455985 /* [CP] Embed Pods Frameworks */,
+				0550BFF3330777DAF87A555B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +189,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				FF82BAE3635D4C10ECA574A3 /* [CP] Embed Pods Frameworks */,
+				B1D1A0DD86A6F400F0A55A28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +263,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0550BFF3330777DAF87A555B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Example/Pods-TagMenu_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TagMenu/TagMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Example/Pods-TagMenu_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		380DAFCC40E59CAAF20D6F78 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,13 +303,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5F52CC37C80ECF10E455985 /* [CP] Embed Pods Frameworks */ = {
+		B1D1A0DD86A6F400F0A55A28 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Example/Pods-TagMenu_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Tests/Pods-TagMenu_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TagMenu/TagMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -300,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Example/Pods-TagMenu_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Tests/Pods-TagMenu_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1F1C7873B483D7244BF59C4 /* [CP] Check Pods Manifest.lock */ = {
@@ -325,24 +343,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF82BAE3635D4C10ECA574A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Tests/Pods-TagMenu_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TagMenu/TagMenu.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagMenu.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TagMenu_Tests/Pods-TagMenu_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -359,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9514F5258277D800ACE0A7 /* HorizontalListViewModelTests.swift in Sources */,
+				AD9514F5258277D800ACE0A7 /* TagMenuViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
