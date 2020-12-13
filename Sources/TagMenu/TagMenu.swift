@@ -5,8 +5,12 @@ import Combine
 public struct TagMenu<T: Displayable>: View {
     @ObservedObject public var viewModel: TagMenuViewModel<T>
     
-    public var rightToLeft: Bool = false
-    public var tagSettings: TagMenuSettings = TagMenuSettings()
+    public var tagSettings: TagMenuSettings
+    
+    public init(viewModel: TagMenuViewModel<T>, tagSettings: TagMenuSettings = TagMenuSettings()) {
+        self.viewModel = viewModel
+        self.tagSettings = tagSettings
+    }
     
     public var body: some View {
         VStack {
@@ -55,10 +59,11 @@ struct HorizontalListView_Previews: PreviewProvider {
         selection: .single)
         
         let view = TagMenu<String>(viewModel: vm,
-                                              tagSettings: TagMenuSettings(highlightColor: .systemRed,
-                                                                           regularColor: .gray,
-                                                                           backgroundColor: .white,
-                                                                           borderSize: 1))
+                                   tagSettings: TagMenuSettings(highlightColor: .systemRed,
+                                                                regularColor: .gray,
+                                                                backgroundColor: .white,
+                                                                cornerRadius: 8,
+                                                                borderSize: 1))
         
         cancellable = vm.selectedItemsSubject.sink { (values) in
             print(values)

@@ -59,11 +59,12 @@ cancellable = viewModel.selectedItemsSubject.sink { (values) in
 Set `TagMenuSettings` custom parameters
 
 ```swift
-let view = TagMenuView<String>(viewModel: vm,
-                                      tagSettings: TagMenuSettings(highlightColor: .black,
-                                                                   regularColor: .gray,
-                                                                   backgroundColor: .white,
-                                                                   borderSize: 3))
+let view = TagMenu<String>(viewModel: vm,
+                           tagSettings: TagMenuSettings(highlightColor: .systemRed,
+                                                        regularColor: .gray,
+                                                        backgroundColor: .white,
+                                                        cornerRadius: 8,
+                                                        borderSize: 1))
 ```
 
 ## Package 
