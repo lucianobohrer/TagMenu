@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Usage
 
+### Generic Elements
+ViewModel generic type needs to conform to `Displayable` protocol that is responsible to represent the string shown in the tag view.
+
 ### Single Selection
 <img src=Docs/single.gif width=200 align="right" />
 
