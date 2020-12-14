@@ -78,7 +78,7 @@ File > Swift Packages > Add Package Dependency: https://github.com/lucianobohrer
 Add a dependency in your your `Package.swift`
 
 ```swift
-.package(url: "https://github.com/lucianobohrer/TagMenu.git", from: "0.1.0"),
+.package(url: "https://github.com/lucianobohrer/TagMenu.git", from: "1.0.0"),
 ```
 
 ## CocoaPods 
