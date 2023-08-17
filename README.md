@@ -27,7 +27,7 @@ let viewModel = TagMenuViewModel<String>(items: [
 title: "",
 selection: .single)
 
-let view = TagMenuView<String>(viewModel: viewModel)
+let view = TagMenu(viewModel: viewModel)
 ```
 ### Multiple Selection
 <img src=Docs/multiple.gif width=200 align="right" />
@@ -42,7 +42,7 @@ let viewModel = TagMenuViewModel<String>(items: [
 title: "Select until 3 items",
 selection: .multiple(max: 3))
 
-let view = TagMenuView<String>(viewModel: viewModel)
+let view = TagMenu(viewModel: viewModel)
 ```
 
 ### Handling Selection Event
