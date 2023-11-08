@@ -38,7 +38,7 @@ public struct TagMenu<T: Displayable>: View {
             }
             
         }
-        .background(Color.white)
+        .background(Color(tagSettings.backgroundColor))
     }
 }
 
